@@ -7,49 +7,56 @@ To use the customizable web component, follow these steps:
 
 Clone the Repository:
 
-bash
+```bash
 Copy code
 git clone <repository_url>
+```
 Navigate to the Project Directory:
 
-bash
+```bash
 Copy code
 cd <project_directory>
+```
 Install Dependencies:
 
-bash
+```bash
 Copy code
 npm install
+```
 Usage
 To integrate the customizable web component into your project, follow these steps:
 
 Import the Custom Element:
 
-html
+```html
 Copy code
 <script src="path/to/dist/main.js"></script>
+```
 Include the Custom Element in HTML:
 
-html
+```html
 Copy code
 <calculator-widget theme="light"></calculator-widget>
+```
 Customization
 The customizable web component supports two themes: light and dark. You can customize the appearance by specifying the theme attribute.
 
 Light Theme:
 
-html
+```html
 Copy code
 <calculator-widget theme="light"></calculator-widget>
+```
 Dark Theme:
 
-html
+```html
 Copy code
 <calculator-widget theme="dark"></calculator-widget>
+```
 Example
 Here's an example of how to use the customizable web component in an HTML file:
 
-html
+```html
 Copy code
 <!DOCTYPE html>
 <html lang="en">
@@ -67,3 +74,4 @@ Copy code
   <calculator-widget theme="dark"></calculator-widget>
 </body>
 </html>
+```
