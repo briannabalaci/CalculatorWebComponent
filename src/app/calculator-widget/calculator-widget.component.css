@@ -1,0 +1,89 @@
+.calculator {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+}
+
+.calculator-card {
+  width: 100%;
+  max-width: 350px;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.display {
+  font-size: 2em;
+  margin-bottom: 10px;
+  padding: 10px;
+  text-align: right;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+button {
+  font-size: 1.5em;
+  height: 60px;
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 8px;
+}
+
+.light .calculator-card {
+  background-color: #f9f9f9; /* Light grey background */
+  color: black;
+}
+
+.light .display {
+  background-color: #e0e0e0; /* Slightly darker grey for display */
+  color: black;
+}
+
+.light button {
+  background-color: #ffffff; /* White buttons */
+  color: black;
+}
+
+.light button:hover {
+  background-color: #f0f0f0; /* Light grey on hover */
+}
+
+.dark .calculator-card {
+  background-color: #424242;
+  color: white;
+}
+
+.dark .display {
+  background-color: #333;
+  color: white;
+}
+
+.dark button {
+  background-color: #555;
+  color: white;
+}
+
+.dark button:hover {
+  background-color: #666; /* Slightly lighter grey on hover */
+}
+
+@media (max-width: 600px) {
+  .calculator-card {
+    padding: 10px;
+  }
+  .display {
+    font-size: 1.5em;
+  }
+  button {
+    font-size: 1.2em;
+    height: 50px;
+  }
+}

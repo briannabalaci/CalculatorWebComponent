@@ -1,0 +1,12 @@
+<div class="calculator" [ngClass]="theme">
+  <mat-card class="calculator-card">
+    <mat-card-content>
+      <div class="display">{{ displayValue }}</div>
+      <div class="buttons">
+        <button mat-raised-button *ngFor="let button of buttons" (click)="onButtonClick(button)">
+          {{ button }}
+        </button>
+      </div>
+    </mat-card-content>
+  </mat-card>
+</div>
